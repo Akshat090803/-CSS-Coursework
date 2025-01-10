@@ -4,9 +4,3 @@
 #para{
   color: blueviolet;
 }
-git init
-git add -A
-git commit -m "Inline , Internal and External Css and their specificity"
-git branch -M main
-git remote add origin https://github.com/Akshat090803/-CSS-Coursework.git
-git push -u origin main
