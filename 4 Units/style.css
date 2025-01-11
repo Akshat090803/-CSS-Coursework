@@ -1,0 +1,101 @@
+/** ------------------------------------- -->
+/**  UNITS IN CSS 
+/** ---------------------------------------- -->
+
+/** Absolute Lengths:  The absolute length units are fixed and a length expressed in any of these will appear as exactly that size. */
+
+/** Relative Lengths: Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium. */
+
+/*? Pixels (px): px is an absolute unit of measurement in CSS, representing the smallest unit of screen space.
+It provides a fixed and consistent size on all devices and screens. */
+/* 
+h1{
+    font-size: 54px;
+}
+p{
+    font-size: 30px;
+}
+li{
+    font-size: 25px;
+}
+*/
+/*? Percentages (%): Percentages are relative units based on the parent element's size or the containing block.
+Widely used in creating responsive layouts.
+Example: width: 50%; sets an element's width to 50% of its parent's width. */
+/* ! 16px = 100% 
+    ? 1px=6.25 %
+    !so to get size of 54px do 54*6.25== 337.5% now write 337.5% instead of 54px
+*/
+/* 
+h1{
+    font-size: 337.5%;
+}
+p{
+    font-size: 187.5%;
+}
+li{
+    font-size: 156.25%;
+}
+*/
+
+
+/*? Em (em): em is a relative unit that is calculated based on the font size of the parent element.
+When you set an element's size in em, it's relative to the font size of its nearest parent with a specified font size. */
+/* !  1 em = 16 px (default) */
+/* ? 1 px =0.0625 em */
+h1{
+    font-size: 3.37em;   /*! here 1 em =16 px =100% */
+}
+p{
+    font-size: 1.875em; /*! here 1 em =16 px =100% */
+}
+.parent{
+    font-size: 62.5%; /* 62.5% = 10px*/
+}                
+li{
+    font-size:2.5em;  /*! here 1 em =10 px =62.5% */
+                      /* ! this becoz em depends on parent and parent has fontsize=10px. thus for child 1em=10px */
+}
+
+/*? Root Em (rem): rem is also a relative unit like em, but it's based on the font size of the root (html) element.
+Using rem ensures that the size is consistent throughout the entire document, making it especially useful for responsive design. */
+ /* ! in root parent em it will depend on font size under html{} and not on other parents */
+ /* ?implimentaion is similar as em but html{} is a root parent */
+/** ------------------------------------- -->
+/**  IMPORTANT TIPS + NOTES
+/** ---------------------------------------- -->
+
+/*? px provides fixed sizes and is not recommended for responsive design as it doesn't adapt to different screen sizes and font settings. However, it can be useful for precise control over small elements. */
+
+/*? em is useful for relative sizing within the context of the parent element's font size. It allows for more flexible and scalable designs. */
+
+/*? rem is the preferred choice for responsive design as it offers a consistent relative size based on the root font size. It's easier to maintain and provides better scalability. */
+
+/** ---------------------------------------- --> */
+
+
+  
+  /*? for Pixels  */
+  
+  /*? for Percentages  100% = 16px  */
+  /* 1px = 6.25% */
+  
+  /*? for 1 em  = 16px */
+  
+  /*? for 1 rem = we can specify the font size of our will */
+  /* we need 1rem = 10px, it makes our life easy  */
+  
+  /** ------------------------------------- -->
+  /**  INTERVIEW QUESTIONS
+  /** ---------------------------------------- -->
+  
+  /*? 1: What is the main difference between em and rem units in CSS? */
+  
+  /*? 2: How does using rem units in your CSS benefit a responsive web design?  ⭐⭐⭐ */
+  /* using rem units in CSS benefits responsive web design because they are relative to the root element (usually the <html> tag).
+   This means that when the user adjusts the font size of their browser,
+    all elements on the page that use rem units will also adjust accordingly.
+     It allows for a more consistent and flexible layout across different devices and screen sizes. */
+     
+  /*? 3: Can you explain how the font-size property in em units works when nested within parent elements with different font sizes? */
+  
