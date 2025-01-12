@@ -88,11 +88,14 @@ p {
   background-color: palegreen;
   color: black;
   font-style: bold;
+  
   margin-left: 15px;
   margin-bottom: 30px;
   margin-right: 15px;
-   margin-top:-20px  /*! negative margin.bottom margin of sect-1 will cancel out top margin of sec-2 */
- }                      /*?we cant give negative padding but can give negative margin*/
+   margin-top:-20px ; /*! negative margin.bottom margin of sect-1 will cancel out top margin of sec-2 */
+  
+  }                      /*?we cant give negative padding but can give negative margin*/
+
 
 /** ------------------------------------------- -->
 /**  ADVANCED MARGIN IN CSS  + NOTES + TIPS
